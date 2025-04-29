@@ -1,8 +1,14 @@
 .percentview {
-    display: flex;
     align-items: center;
     justify-items: center;
     font-size: 2rem;
     padding: 1em;
-    border: 3px black solid;
+    margin: 1em;
+    border: 1px black solid;
+}
+
+.bar{
+    width:50%;
+    height: 50px;
+    border: 1px solid black;
 }

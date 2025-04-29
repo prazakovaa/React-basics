@@ -2,14 +2,13 @@ import View from './components/PercentView'
 
 
 export const  App = () => {
-  let cislo: number = 34;
-  cislo -= 1;
+    const makeColor = (value: number) => `hsl(${(value / 100) * 360}, 100%, 50%)`;
 
   return (
     <>
-      <View value={cislo} max={100} makeColor={(p) => "red"}/>
-      <View value={cislo} max={50} makeColor={(p) => "orange"}/>
-      <View value={cislo} max={1} makeColor={(p) => "green"}/>
+      <View value={100} max={100} makeColor={(p) => makeColor(p)}/>
+      <View value={50} max={100} makeColor={(p) => makeColor(p)}/>
+      <View value={10} max={100} makeColor={(p) => makeColor(p)} />
     </>
   )
   
